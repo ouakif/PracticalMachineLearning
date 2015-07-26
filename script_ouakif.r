@@ -18,6 +18,3 @@ confusionMatrix(predictions, testing_sub_set$classe)
 modelFit_np <- train(training_data_subset$classe ~ . , method="glm", data = training_data_subset)
 predictions_np <- predict(modelFit_np, testing_sub_set)
 confusionMatrix(predictions_np, testing_sub_set$classe)
-
-
-
